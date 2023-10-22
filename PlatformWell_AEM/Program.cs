@@ -63,7 +63,7 @@ namespace APISyncApp
             return null;
         }
 
-        static async Task<List<PlatformTable>> GetPlatformWellActualAsync(HttpClient httpClient, string token)
+        static async Task<List<Platform>> GetPlatformWellActualAsync(HttpClient httpClient, string token)
         {
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
@@ -72,20 +72,20 @@ namespace APISyncApp
             if (response.IsSuccessStatusCode)
             {
                 var responseData = await response.Content.ReadAsStringAsync();
-                List<PlatformTable> actualData = JsonConvert.DeserializeObject<List<PlatformTable>>(responseData);
+                List<Platform> actualData = JsonConvert.DeserializeObject<List<Platform>>(responseData);
                 return actualData;
             }
 
             return null;
         }
 
-        static void SyncDataIntoDatabase(TestAemContext context, List<PlatformTable> data)
+        static void SyncDataIntoDatabase(TestAemContext context, List<Platform> data)
         {
             if (data.Count != 0)
             {
                 foreach (var platform in data)
                 {
-                    var platformModel = context.PlatformTables.FirstOrDefault(instance => instance.Id == platform.Id);
+                    var platformModel = context.Platform.FirstOrDefault(instance => instance.Id == platform.Id);
                     if (platformModel == null)
                     {
                         context.Add(platform);
@@ -105,7 +105,7 @@ namespace APISyncApp
                     {
                         foreach (var well in platform.Well)
                         {
-                            var wellModel = context.PlatformWells.FirstOrDefault(instance => instance.Id == well.Id);
+                            var wellModel = context.Well.FirstOrDefault(instance => instance.Id == well.Id);
                             if (wellModel == null)
                             {
                                 context.Add(well);

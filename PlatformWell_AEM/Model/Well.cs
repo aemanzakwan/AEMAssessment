@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PlatformWell_AEM.Model;
 
-public partial class PlatformWell
+
+public class Well
 {
     public int Id { get; set; }
 
@@ -19,5 +22,5 @@ public partial class PlatformWell
 
     public DateTime? UpdatedAt { get; set; }
 
-    public virtual PlatformTable? Platform { get; set; }
+    public virtual Platform? Platform { get; set; }
 }

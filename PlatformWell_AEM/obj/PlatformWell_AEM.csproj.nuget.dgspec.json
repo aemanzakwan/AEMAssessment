@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\source\\repos\\PlatformWell_AEM\\PlatformWell_AEM.csproj": {}
+    "C:\\Users\\Acer\\Downloads\\New folder\\New folder\\PlatformWell_AEM\\PlatformWell_AEM\\PlatformWell_AEM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\source\\repos\\PlatformWell_AEM\\PlatformWell_AEM.csproj": {
+    "C:\\Users\\Acer\\Downloads\\New folder\\New folder\\PlatformWell_AEM\\PlatformWell_AEM\\PlatformWell_AEM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\PlatformWell_AEM\\PlatformWell_AEM.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Downloads\\New folder\\New folder\\PlatformWell_AEM\\PlatformWell_AEM\\PlatformWell_AEM.csproj",
         "projectName": "PlatformWell_AEM",
-        "projectPath": "C:\\Users\\Acer\\source\\repos\\PlatformWell_AEM\\PlatformWell_AEM.csproj",
+        "projectPath": "C:\\Users\\Acer\\Downloads\\New folder\\New folder\\PlatformWell_AEM\\PlatformWell_AEM\\PlatformWell_AEM.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\source\\repos\\PlatformWell_AEM\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\Downloads\\New folder\\New folder\\PlatformWell_AEM\\PlatformWell_AEM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
